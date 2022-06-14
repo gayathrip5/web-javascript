@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringFunctionx</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        
+        var str = "this is a string";
+        console.log(str);
+
+        //firstoccurence of substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurance of substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+          // substring from a string by substring method
+        var substr1 = str.substring(1,5); // doesnot takes negative values
+        console.log(substr1);
+
+         // substring from a string by substr method
+         var substr2 = str.substr(1,5); 
+        console.log(substr2);
+
+        // substring from a string by slicing
+        var substr3 = str.slice(1,5);
+        console.log(substr3);
+
+        //replacing substrings
+        var replaced = str.replace('string' , 'harry');
+        console.log(str);
+        console.log(replaced);
+
+        //uppercase and lowercase changing
+        console.log(str.toUpperCase());
+        console.log(replaced.toLowerCase());
+
+        //joining of strings
+        var newstring = str.concat('New String');
+        console.log(newstring);
+
+        //string with white spaces
+        var strWithWhitespaces = "    this  contains      whitespaces";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+
+        //character at certain index
+        var char3 = str.charAt(2);
+        console.log(char3);
+
+    </script>
+</body>
+</html>
