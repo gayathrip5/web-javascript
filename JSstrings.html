@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>strings in javascript</h1>
+        <div id="content"></div>
+    </div>
+    <script>
+        var string = "this";
+        console.log(string);
+        var name = 'har"ry';
+        console.log(name);
+        var channel = "code with harry";
+        console.log(channel);
+        var messege = "harry is good guide";
+        console.log(messege);
+
+        var a = 'good';
+        var b = 'habit';
+        var c = 'effective';
+        //string concatination
+        console.log(a + b + c);
+
+        var temp = `${name} is a great guy has a channel called ${channel}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`length of the name is ${len}`);
+
+        //escape sequance character
+        console.log("hello world \nme")
+        
+        //new constructor
+        var y = new String("this");
+        console.log(y);
+
+        //insertion of eliment dynamically using java script
+        document.getElementById('content').innerHTML = '<h3>this is  h3 heading</h3> '
+
+
+
+
+    </script>
+
+</body>
+
+</html>
