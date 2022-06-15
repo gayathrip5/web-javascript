@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+
+<body>
+    <h1>arrays and objects in java script</h1>
+</body>
+<script>
+    //values are two types reference and primitive
+    //primitive such as string bolean,numbr etc
+    //reference type creates objects
+    let myVar1 = 23;
+    let myVar2 = "string";
+    let myVar3 = true;
+    let myVar4 = null;
+    let myVar = undefined;
+    //object stores key value pairs
+    let employee = {
+        nameee: "hary",
+        salary : 10,
+        channel1 : "code with harry",
+        channel : "programig with harry",
+}
+    //accesing objects
+  console.log(employee.salary);
+  console.log(employee.channel);
+  console.log(employee.channel1);
+    // arrray is speacial kind of objects so it stores sequence of elimets
+    let name = [1, 2, 3, "harry", undefined];
+    console.log(name[1]);
+    //array object
+    let names = new Array(1, 2, 3, "harry", undefined);
+    console.log(names);
+    console.log(names.length);
+    //array sort
+    let names1 = new Array(1, 34, 65, 90, 2, 3, "harry", undefined);
+    console.log(names1);
+    names1 = names1.sort();
+    console.log(names1);
+    //insertion
+    let names2 = new Array(1, 2, 3, "harry", undefined);
+    names2.push("pushed new to array");
+    console.log(names2);
+    
+
+
+
+</script>
+
+</html>
