@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction using alert ,prompt,confirm</title>
+</head>
+<body>
+    <div class="container">
+        interaction using <br>alert ,<br>prompt, <br>confirm.
+    </div>
+</body>
+<script>
+    // alert function with string as agruement fun gives popup msg,usaully used for reminders
+    //it doesnot return anything
+   // alert("this is msg");
+
+    //to enter details we use prompt
+    //  let name = prompt("what is your name", "guest");
+    // console.log(name);
+
+    //confirm is used while if there is any deletions or modificaions occurimg
+    let deletePost = confirm("do u really want to delete this post");
+    if(deletePost){
+        console.log("your post was deleted successfully");
+    }
+    else{
+        console.log("your post has not been deleted");
+    }
+ //   console.log(deletePost);
+
+
+
+</script>
+</html>
