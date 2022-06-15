@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope ,conditional statements</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        //scope
+        //var
+        var string1 = "this is a string";
+        var string1 = "this is a string2"; //re declared 
+        console.log(string1);
+        //let
+        //var declared in funtion will have scope with in funtion
+        // can use let insteadof var
+        let a = "u";
+        {
+            let a = "u6";
+            console.log(a);
+        }
+        console.log(a);
+        //constants
+        // u cant change constants by redeclaring as let and var
+        const b = "constant cannot be changed";
+        console.log(b);
+        //if-else
+        let age = 34;
+        if (age > 18) {
+            console.log("u can drink water");
+        }
+        else {
+            console.log("u can drink cold drink");
+        }
+        //if-elseif-else
+        let ag = 4;
+        if (ag == 6) {
+            console.log("u can drink water");
+        }
+        else if (ag == 5) {
+            console.log("u can drink cold drink");
+        }
+        else {
+            console.log("u can drink");
+        }
+        //switch statements
+        const cups = 45;
+        switch (cups) {
+            case 4:
+                console.log("the value of cusp is 4");
+                break;
+            case 41:
+                console.log("the value of cusp is 41");
+                break;
+            case 49:
+                console.log("the value of cusp is 45");
+                break;
+            case 14:
+                console.log("the value of cusp is 14");
+                break;
+
+            default:
+                console.log("there is no 45");
+                 break;
+        }
+
+    </script>
+</body>
+
+</html>
