@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events and event listeners</title>
+    <style>
+        #btn {
+            margin: auto;
+            padding: 10px 35px;
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: grey;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>events and listeners in js</h1>
+        <h2>browser events</h2>
+        <br>clicking
+        <br>contextmenu
+        <br>mouseover/mouseout
+        <br>mousedown/mouseup
+        <br>mousemove
+        <hr>
+        <hr>
+        submit<br>
+        focus
+        <hr>
+        <hr>
+        DOMContentloaded
+        <hr>
+        transistionend<br><br> 
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quo, quas explicabo magni error,
+            blanditiis, labore atque optio corrupti autem reiciendis animi soluta perspiciatis ab dignissimos? Itaque
+            libero dolores quas! Repellendus, quo! Quaerat ab vitae nulla voluptatem recusandae aspernatur explicabo?
+        </p>
+    </div>
+        <button id="btn" onclick="toggleHide()">show/hide</button>
+     
+    <script>
+        let para = Document.getElementById('para');
+        para.addEventListener('mouseover' , function run(){
+         alert('mouse inside');
+         console.log("mouse inside")
+        });
+
+        para.addEventListener('mouseout' , function run(){
+         alert('mouse outside');
+        });
+
+        //event is change
+        //clicking on a button and change occurs ...happens with the help of listener 
+        //i,e event listener
+        //1)event listener code should be written inorder show some change in action
+      function toggleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if(para.style.display !='none'){
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+        }
+        
+      } 
+           
+           
+    </script>
+</body>
+
+</html>
