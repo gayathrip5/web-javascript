@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time and date</title>
+    <style>
+        .container{
+            font-size: larger;
+            background-color: blue;
+            color: antiquewhite;
+            border: 3px solid red;
+            border-radius: 10px;
+            margin:12px auto;
+            padding:10px;
+            font-weight: bolder;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        this is a container
+        current time is <span id="time">current time</span>
+    </div>
+    
+</body>
+<script>
+console.log("date and time");
+
+let now1 = new Date();
+console.log(now1);
+
+//this is time taken as reference and we can pass any number as parameter
+let now = new Date(0);
+console.log(now);
+
+//set date
+let newDate = new Date("2019-09-30");
+console.log(newDate);
+
+//let newDate1= new Date(year,month,date,hours,minutes,seconds,milliseconds);
+let newDate1 = new Date(2019,4,6,9,3,34);
+console.log(newDate1);
+//
+let yr = newDate.getFullYear();
+console.log("the full year is ", yr );
+//
+let date = newDate.getDate();
+console.log("the date is ", date );
+//
+let mon = newDate.getMonth();
+console.log("the mon is ", mon );
+//
+let hr = newDate.getHours();
+console.log("the hours is ", hr );
+//
+newDate.setDate(15);
+newDate.setMinutes(24);
+console.log(newDate);
+//
+setInterval(updateTime,1000);
+function updateTime(){
+    time.innerHTML =new Date();
+}
+
+</script>
+</html>
