@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manupulatting DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>about us</li>
+            <li>coontact us</li>
+            <li>services</li>
+            <li>home</li>
+        </ul>
+    </div>
+</body>
+<script>
+    //navigating
+    let main = document.getElementById('main');
+    console.log(main);
+    let nav = document.getElementById('nav');
+    console.log(nav);
+  let a=  nav.innerHTML;
+  console.log(a);
+
+//manupulating by id 
+ nav.innerHTML = "<li>dynamic element</li>";
+ let b = nav.innerHTML;
+ console.log("after manupulation is " + b);
+
+ //manupulating by class
+ let containers = document.getElementsByClassName('container');
+ console.log(containers);
+
+ //returnig selectors
+ let sel = document.querySelector('#nav');
+ console.log(sel);
+
+ let sele = document.querySelector('#nav>li');
+ console.log(sele);
+
+ let selec = document.querySelectorAll('#nav');
+ console.log(selec);
+ //used for making dynamic websites
+  
+</script>
+</html>
