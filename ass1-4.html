@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+
+<body>
+    factorial of a number
+</body>
+<script>
+    function factorial(n) {
+        let fact = 1;
+        if (n == 0 || n == 1) {
+            return fact;
+            console.log("number n is 1 or 0");
+        } else {
+            for (var i = n; i >= 1; i--) {
+                fact = fact * i;
+                console.log(fact);
+            }
+            return fact;
+        }
+    }
+    a = factorial(4);
+
+    console.log("fact is ", a);
+
+
+</script>
+
+</html>
