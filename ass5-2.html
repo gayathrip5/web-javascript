@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>the element object</h1>
+        <h2>THE insertBefore() method</h2>
+        <ul id="favlist">
+            <li>rose</li>
+            <li>lilly</li>
+
+        </ul>
+        <script>
+            //create a li element
+            const newNode=document.createElement("li");
+            //create text node
+            const textNode=document.createTextNode("sunflower");
+            newNode.appendChild(textNode);
+            //insertbefore
+            const list=document.getElementById("favlist");
+            list.insertBefore(newNode,list.children[0]);
+        </script>
+    </body>
+</html>
